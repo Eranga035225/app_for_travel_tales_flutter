@@ -8,13 +8,13 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 1, 45, 79),
+      backgroundColor: const Color.fromARGB(255, 1, 65, 114),
       body: Center(
 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(FontAwesomeIcons.plane, color: Colors.white, size: 40),
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -22,6 +22,7 @@ class SplashScreen extends StatelessWidget {
                 Text('Tales ', style: GoogleFonts.pacifico(color: Colors.white, fontSize: 36),),
               ],
             ),
+            Text('Find your next adventure', style: GoogleFonts.lato(color: Colors.white70, fontSize: 16),),
           ],
         )
       
