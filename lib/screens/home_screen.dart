@@ -15,10 +15,23 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Column(children: [
           Row(children: [
-            Text("Hi Era", style:TextStyle(
-              
-        
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Hi, Era👋", style:TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.w500
+                  
+                        
+                )),
+                Text('Explore the world', style:TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w300
+
             ))
+              ],
+            ),
+          
         
           ],)
         
