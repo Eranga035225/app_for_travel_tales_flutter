@@ -12,13 +12,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(children: [
-        Row(children: [
-          
-
-        ],)
-
-      ],)
+      body: SafeArea(
+        child: Column(children: [
+          Row(children: [
+            Text("Hi Era", style:TextStyle(
+              
+        
+            ))
+        
+          ],)
+        
+        ],),
+      )
 
       
 
