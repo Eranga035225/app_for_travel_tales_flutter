@@ -193,8 +193,46 @@ class _HomeScreenState extends State<HomeScreen> {
               ],),
             ),
             SizedBox(height:20,),
-            Destination(size: size, image: 'assets/images/2.jpeg',name1: 'Mount Narangala',name2: ', Sri Lanka',name3: 'Badulla, Sri Lanka',rating: '4.8',)
 
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+
+              child: Row(
+                children: [
+                  Destination(size: size, image: 'assets/images/2.jpeg',name1: 'Mount Narangala',name2: ', Sri Lanka',name3: 'Badulla, Sri Lanka',rating: '4.8',),
+                  SizedBox(width:20),
+                  Destination(size: size, image: 'assets/images/4.jpeg',name1: 'Mount Hawagala',name2: ', Sri Lanka',name3: 'Belihul Oya, Sri Lanka',rating: '4.5',),
+                  SizedBox(width:20),
+                  Destination(size: size, image: 'assets/images/1.jpeg',name1: 'Mount Kurundu Oya', name2: ', Sri Lanka',name3: 'Walapane, Sri Lanka',rating: '4.0',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/wan.jpeg',name1: 'Mount Wangedigala', name2: ', Sri Lanka',name3: 'Kalupahana, Sri Lanka',rating: '5.0',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/chari.jpeg',name1: 'Chariot Path', name2: ', Sri Lanka',name3: 'Pussallewa, Sri Lanka',rating: '5.0',),
+
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/kab.jpeg',name1: 'Mount Kabaragala', name2: ', Sri Lanka',name3: 'Dolosbage, Sri Lanka',rating: '4.5',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/hari.jpeg',name1: 'Haritha Kanda', name2: ', Sri Lanka',name3: 'Hatton, Sri Lanka',rating: '4.8',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/ella.jpeg',name1: 'Ella Rock', name2: ', Sri Lanka',name3: 'Ella, Sri Lanka',rating: '5.0',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/hab.jpeg',name1: 'Palugaswewa', name2: ', Sri Lanka',name3: 'Habarana, Sri Lanka',rating: '3.7',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/ohiya.jpeg',name1: 'Kalupahana Road', name2: ', Sri Lanka',name3: 'Ohiya, Sri Lanka',rating: '5.0',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/hulan.jpeg',name1: 'Hulangala', name2: ', Sri Lanka',name3: 'Hulangala, Sri Lanka',rating: '4.0',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/Gal.jpeg',name1: 'Galboda Falls', name2: ', Sri Lanka',name3: 'Galboda, Sri Lanka',rating: '4.0',),
+                  SizedBox(width: 20),
+                  Destination(size: size, image: 'assets/images/Galnewa.jpeg',name1: 'Galnewa', name2: ', Sri Lanka',name3: 'Galnewa, Sri Lanka',rating: '3.0',),
+                  SizedBox(width: 20),
+                  
+
+
+                ],
+              ),
+            ),
+            
 
            
 
