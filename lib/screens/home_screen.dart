@@ -205,6 +205,86 @@ class _HomeScreenState extends State<HomeScreen> {
 
               ),
 
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 12,right:8,
+                    child: CircleAvatar(
+                      radius: 20,
+                      child:Icon(Icons.favorite_border, color:Colors.grey.shade200,),
+                      backgroundColor: Colors.black.withAlpha(30),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom:8.0),
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        width: size.width* 0.6,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          
+                          color: Colors.grey.shade900.withAlpha(90),
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child:Column(
+                          children: [
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text('Mount Narangala', style:TextStyle(
+                                  color:Colors.white,
+                                  fontSize:16,
+                                  fontWeight: FontWeight.w800
+                                ),),
+                                Text(', Sri Lanka', style:TextStyle(
+                                  color:Colors.grey.shade100,
+                                  fontSize:13,
+                                  fontWeight: FontWeight.w400
+                                ),),  
+                              ],
+
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.location_on_rounded, color: Colors.grey.shade300,size:20),
+                                    SizedBox(width:4,),
+                                    Text('Badulla, Sri Lanka', style:TextStyle(
+                                      color:Colors.grey.shade300,
+                                      fontSize:14,
+                                      fontWeight: FontWeight.w400
+                                    ),),
+                                
+                                    
+                                
+                                  ],
+                                ),
+                                Row(children: [
+                                  Icon(Icons.star_border, color: Colors.amber.shade400,size: 20),
+                                  Text('4.8', style:TextStyle(
+                                    color:Colors.grey.shade300,
+                                    fontSize:14,
+                                    fontWeight: FontWeight.w400
+                                  ),),
+                                ],)
+                              ],
+                            )
+                          ],
+
+                        )
+                      ),
+                    ),
+                  )
+
+                ],
+               
+              
+              )
+
             )
 
 
