@@ -19,39 +19,42 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hi, Era👋", style:TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w500
-                    
-                          
-                  )),
-                  Text('Explore the world', style:TextStyle(
-                  fontSize: 16,
-                  color:Colors.grey.shade600,
-                  fontWeight: FontWeight.w300
-          
-              ))
-                ],
-              ),
-             
-              CircleAvatar(
-                radius: 25,
-                backgroundImage: AssetImage('assets/images/4.jpeg')
-              ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Hi, Era👋", style:TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w500
+                      
+                            
+                    )),
+                    Text('Explore the world', style:TextStyle(
+                    fontSize: 16,
+                    color:Colors.grey.shade600,
+                    fontWeight: FontWeight.w300
+                        
+                ))
+                  ],
+                ),
+               
+                CircleAvatar(
+                  radius: 25,
+                  backgroundImage: AssetImage('assets/images/4.jpeg')
+                ),
+              
+              
+              
+              
+                        
+              ],),
+            ),
 
-
-
-            
-          
-            ],),
-
-            SizedBox(height: 20,),
+            SizedBox(height: 30,),
 
             Container(
               // width: size.width - 16,
@@ -67,6 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               ),
               child:Row(children: [
+                SizedBox(width:10),
                 SizedBox(
                   width:(size.width-16)*0.8,
                   child: TextField(
@@ -93,106 +97,112 @@ class _HomeScreenState extends State<HomeScreen> {
               ],)
             ),
 
-            SizedBox(height:20,),
+            SizedBox(height:30,),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-              Text('Popular Destinations', style:TextStyle(
-                fontSize:22,
-                fontWeight: FontWeight.w500
-              ),
-              ),
-              Text('View all', style:TextStyle(
-                fontSize:16,
-                color:Colors.grey.shade500,
-                fontWeight: FontWeight.w400
-              ),)
-              
-              
-            ],),
-            SizedBox(height:20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                Text('Popular Destinations', style:TextStyle(
+                  fontSize:22,
+                  fontWeight: FontWeight.w500
+                ),
+                ),
+                Text('View all', style:TextStyle(
+                  fontSize:16,
+                  color:Colors.grey.shade500,
+                  fontWeight: FontWeight.w400
+                ),)
+                
+                
+              ],),
+            ),
+            SizedBox(height:30,),
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                Container(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                  Container(
+                    
+                    decoration: BoxDecoration(
+                      color:Colors.grey.shade800,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                      child: Text('Most Viewed', style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),),
+                    ),
+                
+                  ),
+                  SizedBox(width:15,),
+                   Container(
+                    
+                    decoration: BoxDecoration(
+                      color:Colors.grey.shade300,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                      child: Text('Near By', style: TextStyle(
+                        color: Colors.grey.shade700,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),),
+                    ),
+                
+                  ),
+                   SizedBox(width:15,),
+                   Container(
+                    
+                    decoration: BoxDecoration(
+                      color:Colors.grey.shade300,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Padding(
+                     padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                      child: Text('Latest', style: TextStyle(
+                        color: Colors.grey.shade700,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),),
+                    ),
+                
+                  ),
+                  SizedBox(width:15,),
+                   Container(
+                    
+                    decoration: BoxDecoration(
+                      color:Colors.grey.shade300,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Padding(
+                     padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                      child: Text('Popular', style: TextStyle(
+                        color: Colors.grey.shade700,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),),
+                    ),
+                
+                  )
                   
-                  decoration: BoxDecoration(
-                    color:Colors.grey.shade800,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
-                    child: Text('Most Viewed', style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),),
-                  ),
-              
-                ),
-                SizedBox(width:15,),
-                 Container(
                   
-                  decoration: BoxDecoration(
-                    color:Colors.grey.shade300,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
-                    child: Text('Near By', style: TextStyle(
-                      color: Colors.grey.shade700,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),),
-                  ),
-              
-                ),
-                 SizedBox(width:15,),
-                 Container(
-                  
-                  decoration: BoxDecoration(
-                    color:Colors.grey.shade300,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Padding(
-                   padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
-                    child: Text('Latest', style: TextStyle(
-                      color: Colors.grey.shade700,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),),
-                  ),
-              
-                ),
-                SizedBox(width:15,),
-                 Container(
-                  
-                  decoration: BoxDecoration(
-                    color:Colors.grey.shade300,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Padding(
-                   padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
-                    child: Text('Popular', style: TextStyle(
-                      color: Colors.grey.shade700,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),),
-                  ),
-              
-                )
                 
                 
-              
-              
-              ],),
+                ],),
+              ),
             ),
-            SizedBox(height:20,),
+            SizedBox(height:40,),
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
