@@ -112,10 +112,84 @@ class _HomeScreenState extends State<HomeScreen> {
             ],),
             SizedBox(height:20,),
 
-            Row(children: [
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                Container(
+                  
+                  decoration: BoxDecoration(
+                    color:Colors.grey.shade800,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                    child: Text('Most Viewed', style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),),
+                  ),
               
-
-            ],)
+                ),
+                SizedBox(width:15,),
+                 Container(
+                  
+                  decoration: BoxDecoration(
+                    color:Colors.grey.shade300,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                    child: Text('Near By', style: TextStyle(
+                      color: Colors.grey.shade700,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),),
+                  ),
+              
+                ),
+                 SizedBox(width:15,),
+                 Container(
+                  
+                  decoration: BoxDecoration(
+                    color:Colors.grey.shade300,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Padding(
+                   padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                    child: Text('Latest', style: TextStyle(
+                      color: Colors.grey.shade700,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),),
+                  ),
+              
+                ),
+                SizedBox(width:15,),
+                 Container(
+                  
+                  decoration: BoxDecoration(
+                    color:Colors.grey.shade300,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Padding(
+                   padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                    child: Text('Popular', style: TextStyle(
+                      color: Colors.grey.shade700,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),),
+                  ),
+              
+                )
+                
+                
+              
+              
+              ],),
+            )
 
 
            
