@@ -10,6 +10,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    final size  = MediaQuery.sizeOf(context);
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -41,10 +42,42 @@ class _HomeScreenState extends State<HomeScreen> {
                 radius: 25,
                 backgroundImage: NetworkImage('https://th.bing.com/th/id/OIP.OmJICjo6Xt-Ay8oWfxkGNQHaHa?w=183&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'),
               ),
-              
+
+
+
             
           
-            ],)
+            ],),
+
+            SizedBox(height: 20,),
+
+            Container(
+              width: size.width - 16,
+              
+              decoration: BoxDecoration(
+                color:Colors.grey.shade200,
+                borderRadius: BorderRadius.circular(20)
+
+              ),
+              child:Row(children: [
+                SizedBox(
+                  width:200,
+                  child: TextField(
+
+
+                  )
+
+                )
+              ],)
+            )
+           
+
+
+
+           
+
+
+           
           
           ],),
         ),
