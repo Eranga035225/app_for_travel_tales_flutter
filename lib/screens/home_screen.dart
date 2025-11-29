@@ -52,22 +52,42 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20,),
 
             Container(
-              width: size.width - 16,
+              // width: size.width - 16,
+              // height:40,
+              padding: EdgeInsets.only(left:8),
               
               decoration: BoxDecoration(
-                color:Colors.grey.shade200,
-                borderRadius: BorderRadius.circular(20)
+                color:Colors.grey.shade100,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(
+                  color:Colors.grey.shade400
+                )
 
               ),
               child:Row(children: [
                 SizedBox(
-                  width:200,
+                  width:(size.width-16)*0.8,
                   child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Search your destination',
+
+                    ),
+                    
 
 
                   )
 
-                )
+                ),
+                Container(
+                  height:30,
+                  width:1,
+                  color:Colors.grey.shade400,
+                ),
+                SizedBox(width:10),
+
+                Icon(Icons.filter_list, color:Colors.grey.shade600,),
+
               ],)
             )
            
