@@ -16,7 +16,9 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(children: [
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -40,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
              
               CircleAvatar(
                 radius: 25,
-                backgroundImage: NetworkImage('https://th.bing.com/th/id/OIP.OmJICjo6Xt-Ay8oWfxkGNQHaHa?w=183&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'),
+                backgroundImage: AssetImage('assets/images/4.jpeg')
               ),
 
 
@@ -189,6 +191,20 @@ class _HomeScreenState extends State<HomeScreen> {
               
               
               ],),
+            ),
+            SizedBox(height:20,),
+            Container(
+              width: size.width* 0.7,
+              height: (size.width* 0.7)*1.2,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                image: DecorationImage(
+                  image: AssetImage('assets/images/2.jpeg'),
+                  fit: BoxFit.cover
+                )
+
+              ),
+
             )
 
 
