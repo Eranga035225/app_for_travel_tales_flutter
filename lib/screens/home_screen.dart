@@ -12,6 +12,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final size  = MediaQuery.sizeOf(context);
     return Scaffold(
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            Icon(Icons.home,size: 35,),
+            Icon(Icons.av_timer,size: 35,),
+            Icon(Icons.favorite,size: 35,),
+            Icon(Icons.person,size: 35,)
+          
+          ],),
+        ),
+      ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
@@ -44,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                
                 CircleAvatar(
                   radius: 25,
-                  backgroundImage: AssetImage('assets/images/4.jpeg')
+                  backgroundImage: AssetImage('assets/images/profile.jpeg')
                 ),
               
               
@@ -54,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],),
             ),
 
-            SizedBox(height: 30,),
+            SizedBox(height: 25,),
 
             Container(
               // width: size.width - 16,
@@ -97,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],)
             ),
 
-            SizedBox(height:30,),
+            SizedBox(height:25,),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -119,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 
               ],),
             ),
-            SizedBox(height:30,),
+            SizedBox(height:20,),
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -202,7 +216,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],),
               ),
             ),
-            SizedBox(height:40,),
+            SizedBox(height:30,),
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -306,7 +320,7 @@ class Destination extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: size.width* 0.7,
-      height: (size.width* 0.7)*1.2,
+      height: (size.width* 0.7)*1.63,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         image: DecorationImage(
@@ -331,9 +345,9 @@ class Destination extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(bottom:8.0),
               child: Container(
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(10),
                 width: size.width* 0.6,
-                height: 60,
+                height: 70,
                 decoration: BoxDecoration(
                   
                   color: Colors.grey.shade900.withAlpha(90),
@@ -375,7 +389,7 @@ class Destination extends StatelessWidget {
                           ],
                         ),
                         Row(children: [
-                          Icon(Icons.star_border, color: Colors.amber.shade400,size: 20),
+                          Icon(Icons.star, color: Colors.amber.shade400,size: 20),
                           Text(rating, style:TextStyle(
                             color:Colors.grey.shade300,
                             fontSize:14,
