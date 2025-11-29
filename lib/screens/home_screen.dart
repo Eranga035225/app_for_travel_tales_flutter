@@ -84,12 +84,40 @@ class _HomeScreenState extends State<HomeScreen> {
                   width:1,
                   color:Colors.grey.shade400,
                 ),
-                SizedBox(width:10),
+                SizedBox(width:20),
 
                 Icon(Icons.filter_list, color:Colors.grey.shade600,),
 
               ],)
-            )
+            ),
+
+            SizedBox(height:20,),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+              Text('Popular Destinations', style:TextStyle(
+                fontSize:22,
+                fontWeight: FontWeight.w500
+              ),
+              ),
+              Text('View all', style:TextStyle(
+                fontSize:16,
+                color:Colors.grey.shade500,
+                fontWeight: FontWeight.w400
+              ),)
+              
+              
+            ],),
+            SizedBox(height:20,),
+
+            Row(children: [
+              
+
+            ],)
+
+
            
 
 
