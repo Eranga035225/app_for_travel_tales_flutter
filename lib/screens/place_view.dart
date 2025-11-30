@@ -34,7 +34,9 @@ class PlaceView extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                      IconButton(onPressed: (){}, 
+                      IconButton(onPressed: (){
+                        Navigator.pop(context);
+                      }, 
                         style: ButtonStyle(
                           backgroundColor:WidgetStatePropertyAll(
                             Colors.black38
@@ -107,7 +109,7 @@ class PlaceView extends StatelessWidget {
               )
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
                 child: Column(
                   children: [
                     SizedBox(height: 20,),
@@ -115,7 +117,7 @@ class PlaceView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                       Text('Overview', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
-                      SizedBox(width: 30,),
+                      SizedBox(width: 20,),
                       Text('Details', style: TextStyle(fontSize: 16, color: Colors.grey.shade700),),
                     ],),
                     SizedBox(height: 25,),
@@ -162,7 +164,7 @@ class PlaceView extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 20,),
-                    Text('Mount KurunduOya is a picturesque,mountain located in the heart of Sri Lanka, walapane. It is Known for its breathtaking views and diverse flora and fauna, it is a popular destination for hikers and nature enthusiasts.', style: TextStyle(fontSize: 16, color: Colors.grey.shade700, height: 1.5),textAlign: TextAlign.justify,),
+                    Text('Mount KurunduOya is a natural mountain located in Walapane, Sri Lanka. It is Known for its breathtaking views and diverse flora and fauna, it is a hidden destination for hikers and nature enthusiasts. It is located in the Central Province in Sri Lanka', style: TextStyle(fontSize: 16, color: Colors.grey.shade700, height: 1.5),textAlign: TextAlign.justify,),
                     SizedBox(height: 20,),
                     
                 
