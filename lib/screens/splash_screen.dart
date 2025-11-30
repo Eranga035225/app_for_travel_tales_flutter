@@ -1,10 +1,25 @@
+import 'dart:async' show Timer;
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SplashScreen extends StatelessWidget {
+import 'home_screen.dart';
+
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  void initState() {
+   Timer(Duration(seconds: 5), () {
+     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+   });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +38,11 @@ class SplashScreen extends StatelessWidget {
               ],
             ),
             Text('Find your next adventure', style: GoogleFonts.lato(color: Colors.white70, fontSize: 14),),
+            SizedBox(height: 30,),
+           CupertinoActivityIndicator(
+            radius: 13,
+            color: Colors.white,
+           )
           ],
         )
       
