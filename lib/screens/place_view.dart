@@ -25,7 +25,37 @@ class PlaceView extends StatelessWidget {
           ),
 
           child: Stack(
-            
+            children: [
+              SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                  IconButton(onPressed: (){}, 
+                    style: ButtonStyle(
+                      backgroundColor:WidgetStatePropertyAll(
+                        Colors.black38
+                      )
+                    
+                    ),
+                    icon: Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,)),
+                  
+                  IconButton(onPressed: (){}, 
+                    style: ButtonStyle(
+                      backgroundColor:WidgetStatePropertyAll(
+                        Colors.black38
+                      )
+                    
+                    ),
+                    icon: Icon(Icons.bookmark_border, color: Colors.white,)),
+                  
+                  ],),
+                ),
+              ),
+              
+            ],
+
           )
           )
 
