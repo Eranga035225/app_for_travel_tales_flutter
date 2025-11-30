@@ -18,11 +18,11 @@ class SplashScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Travel ', style: GoogleFonts.alfaSlabOne(color: Colors.white, fontSize: 36),),
-                Text('Tales ', style: GoogleFonts.pacifico(color: Colors.white, fontSize: 36),),
+                Text('Travel ', style: GoogleFonts.alfaSlabOne(color: Colors.white, fontSize: 30),),
+                Text('Tales ', style: GoogleFonts.actor(color: Colors.white, fontSize: 30),),
               ],
             ),
-            Text('Find your next adventure', style: GoogleFonts.lato(color: Colors.white70, fontSize: 16),),
+            Text('Find your next adventure', style: GoogleFonts.lato(color: Colors.white70, fontSize: 14),),
           ],
         )
       
