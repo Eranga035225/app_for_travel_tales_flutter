@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Travel Tales',
       debugShowCheckedModeBanner: false,
       
-      home: PlaceView(),
+      home: SplashScreen(),
     );
   }
 }
