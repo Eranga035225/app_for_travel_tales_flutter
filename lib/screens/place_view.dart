@@ -118,21 +118,51 @@ class PlaceView extends StatelessWidget {
                 ],),
                 SizedBox(height: 25,),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                   Row(
                     children: [
                       CircleAvatar(
-                        radius: 15,
-                        backgroundColor: Colors.grey.shade400,
-                        child: Icon(Icons.access_time_filled_outlined, size: 20,color: Colors.grey.shade900,),
-                      )
+                        radius: 13,
+                        backgroundColor: Colors.grey.shade300,
+                        child: Icon(Icons.access_time_filled_outlined, size: 18,color: Colors.grey.shade900,),
+                      ),
+                      SizedBox(width: 8,),
+                      Text('8 hours', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.grey.shade500),)
                       
                     ],
-                  )
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 13,
+                        backgroundColor: Colors.grey.shade300,
+                        child: Icon(Icons.cloud, size: 18,color: Colors.grey.shade900,),
+                      ),
+                      SizedBox(width: 8,),
+                      Text('16°C', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.grey.shade500),)
+                      
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 13,
+                        backgroundColor: Colors.grey.shade300,
+                        child: Icon(Icons.star, size: 18,color: Colors.amber.shade700,),
+                      ),
+                      SizedBox(width: 8,),
+                      Text('4.5', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.grey.shade500),)
+                      
+                    ],
+                  ),
+                  
                   ],
-                )
+                ),
+                SizedBox(height: 20,),
+                Text('Mount Kurundu Oya is a picturesque mountain located in the heart of Sri Lanka. Known for its breathtaking views and diverse flora and fauna, it is a popular destination for hikers and nature enthusiasts.', style: TextStyle(fontSize: 16, color: Colors.grey.shade700, height: 1.5),)
             
-                  ],
+              ],
             ),
           )
 
